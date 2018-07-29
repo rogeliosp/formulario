@@ -1,0 +1,94 @@
+<html>
+
+<head>
+
+<title>Green Leaves</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style>
+form {
+   
+    margin: 0 auto;
+    width: 500px;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+	
+	margin-top: 35px;
+	margin-left: 320;
+}
+
+form div + div {
+    margin-top: 1em;
+}
+
+invalid {
+background-color: 2px solid #ff0000;
+}
+
+h1 {
+		margin: 0 auto;
+		padding: 1em;
+		border: 3px solid #CCC;
+		border-color: #1ee64c;
+		width: 900px;
+		height: 20px;
+		border-radius: 1em;
+		background: #1ee64c;
+		font-size: 70;
+		text-align = left;
+		margin-top: 70px;
+		color: white;
+		border-bottom-width: 150px;
+		border-top-width: 1px;
+		box-shadow: 0px 10px 10px #333;
+	
+	}
+	
+	img{
+	
+	margin-bottom: 300px;
+	margin-right: 390px;
+	margin-top: 45px;
+	
+	}
+	
+
+</style>
+
+<script src="validacion.js"> </script>
+
+</head>
+
+<body>
+<img src="greenleave.png" width="150" height="200" align="right" >
+<h1>Green Leaves</h1>
+
+
+
+<form action="resultado.html" onsubmit="return validacion();" method = "post">
+
+Nombre:<input type="text" id="nombre" name="nombre"  /><br />
+
+E-mail:<input type="email" id="email" name="email"  /><br />
+
+Telefono:<input type="text" id="telefono" name="telefono"  /><br />
+
+Fecha:<input type="date" id="fecha" name="fecha"  /> 
+<button type="button" class="btn btn-default btn-sm">
+<span class="glyphicon glyphicon-calendar"></span> 
+</button> <br /> 
+
+Ciudad y Estado:<input type="text-" id="ciudad" name="ciudad"  /> Powered by <a href="#"> geonames.org </a><br /> 
+
+<input type="submit" value="Enviar" />
+
+</form>
+
+</body>
+
+</html>
